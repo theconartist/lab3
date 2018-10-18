@@ -8,17 +8,19 @@ public class Lab3 {
 
     // this method should return the smaller of the two integers
     public int min(int x, int y) {
-        return x;
+        return x < y ? x : y;
     }
 
     // this method should return the larger of the two integers
     public int max(int x, int y) {
-        return x;
+        return x > y ? x : y;
     }
 
     // this method should return the median of the three integers
     public int median(int a, int b, int c) {
-        return a;
+        if (a > b && a < c || a > c && a < a) return a;
+        if (a > b && a < c || a > c && a < a) return a;
+        if (a > b && a < c || a > c && a < a) return a;
     }
 
     // this method should calculate how much tax someone with the
